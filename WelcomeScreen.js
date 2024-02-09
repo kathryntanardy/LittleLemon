@@ -7,7 +7,7 @@ export default function WelcomeScreen() {
   const colorScheme = useColorScheme();
 
   return (
-    <ScrollView indicatorStyle="white" style={[styles.container, colorScheme === 'light' ? { backgroundColor: 'white', fontColor: 'black' } : { backgroundColor: 'black', fontColor: 'white' },]}>
+    <ScrollView indicatorStyle="white" style={[styles.container, colorScheme === 'light' ? { backgroundColor: '#333333', fontColor: 'white' } : { backgroundColor: '#333333', fontColor: 'white' },]}>
       <View style={styles.innerContainer}>
         <Image
           style={styles.icon}
@@ -30,6 +30,7 @@ export default function WelcomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#333333'
   },
   innerContainer: {
     flexDirection: 'row',
@@ -42,14 +43,14 @@ const styles = StyleSheet.create({
     paddingTop: 30,
     paddingBottom: 10,
     fontSize: 30,
-    // color: '#EDEFEE',
+    color: '#EDEFEE',
     textAlign: 'center',
   },
   regularText: {
     fontSize: 24,
     padding: 20,
     marginVertical: 8,
-    // color: '#EDEFEE',
+    color: '#EDEFEE',
     textAlign: 'center',
   },
   icon: {
